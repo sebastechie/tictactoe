@@ -7,9 +7,8 @@
 }
 
 .container {
-  height: 80vh;
-  width: 80vw;
-  border: 2px solid blue;
+  height: 100vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,8 +42,8 @@
 }
 
 .container .maingrid {
-  width: 90%;
-  height: 82%;
+  width: 70%;
+  height: 70%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -56,14 +55,24 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+}
+
+.container .maingrid .grid1:hover, .container .maingrid .grid2:hover, .container .maingrid .grid3:hover {
+  background-color: lightgrey;
 }
 
 .container .maingrid .grid4, .container .maingrid .grid5, .container .maingrid .grid6 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+}
+
+.container .maingrid .grid4:hover, .container .maingrid .grid5:hover, .container .maingrid .grid6:hover {
+  background-color: lightgrey;
 }
 
 .container .maingrid .grid7, .container .maingrid .grid8, .container .maingrid .grid9 {
@@ -72,23 +81,58 @@
   grid-row: 3 / 4;
 }
 
+.container .maingrid .grid7:hover, .container .maingrid .grid8:hover, .container .maingrid .grid9:hover {
+  background-color: lightgrey;
+}
+
 .container .maingrid .grid1, .container .maingrid .grid4, .container .maingrid .grid7 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  border-right: 2px solid green;
+  border-right: 2px solid grey;
+  cursor: pointer;
+}
+
+.container .maingrid .grid1:hover, .container .maingrid .grid4:hover, .container .maingrid .grid7:hover {
+  background-color: lightgrey;
 }
 
 .container .maingrid .grid2, .container .maingrid .grid5, .container .maingrid .grid8 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
-  border-right: 2px solid green;
+  border-right: 2px solid grey;
+  cursor: pointer;
+}
+
+.container .maingrid .grid2:hover, .container .maingrid .grid5:hover, .container .maingrid .grid8:hover {
+  background-color: lightgrey;
 }
 
 .container .maingrid .grid3, .container .maingrid .grid6, .container .maingrid .grid9 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
+}
+
+.container .maingrid .grid3:hover, .container .maingrid .grid6:hover, .container .maingrid .grid9:hover {
+  background-color: lightgray;
+}
+
+.container .results {
+  border: 2px solid grey;
+  height: 10%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  margin: 30px 0;
 }
 /*# sourceMappingURL=styles.css.map */
